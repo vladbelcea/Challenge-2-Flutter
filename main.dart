@@ -16,20 +16,20 @@ class Home extends StatelessWidget {
         elevation: 0.0,
       ),
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0),
+        padding: const EdgeInsets.fromLTRB(30.0, 10.0, 30.0, 0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Center(
               child: Image(
                 image: AssetImage('assets/profile.jpg'),
-                width: 100 ,
-                height: 200,
+                width: 150 ,
+                height: 250,
               ),
             ),
             Divider(
               color: Colors.grey[800],
-              height: 60.0,
+              height: 10.0,
             ),
             Text(
               'NAME',
@@ -66,7 +66,24 @@ class Home extends StatelessWidget {
                 letterSpacing: 2.0,
               ),
             ),
-
+            SizedBox(height: 30.0),
+            Text(
+              'ABOUT',
+              style: TextStyle(
+                color: Colors.grey,
+                letterSpacing: 2.0,
+              ),
+            ),
+            SizedBox(height: 10.0),
+            Text(
+              '20 years old, student at Universitatea Politehnica Timisoara',
+              style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+                fontSize: 18.0,
+                letterSpacing: 1.0,
+              ),
+            ),
 
             SizedBox(height: 30.0),
             Row(
@@ -92,5 +109,3 @@ class Home extends StatelessWidget {
     );
   }
 }
-
-
